@@ -8,8 +8,8 @@ body
 .position
 {
 	position:absolute;
-	top:340px;
-	left:340px;
+	top:0px;
+	left:0px;
 }
 .position_button
 {
@@ -38,7 +38,16 @@ body
 
 #button
 {
-	background-color:white;
+	background-image:url("assets/images/atplus_white.png");
+	background-repeat: no-repeat;
+	background-position: 2px 3px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	position: absolute;
+	top:20px;
+	left: 100px;
+	background-color: black;
 }
 
 #a
@@ -115,13 +124,14 @@ span.unread
 
 #info-bar
 {
+	opacity:0;
 	overflow:hidden;
 	background-color:white;
 	width:0px;
 	height:0px;
 	position: absolute;
-	top:352px;
-	left:355px;
+	top:0px;
+	left:0px;
 	border-radius:50%;
   transition-property: all;
 
@@ -129,6 +139,7 @@ span.unread
 
 #button:hover #info-bar
 {
+	opacity:1;
 	width:130px;
 	height:130px;
 	background-color:rgba(0,0,0,0.35);
@@ -183,6 +194,7 @@ li.posted
 
 li.mask
 {
+	opacity:0;
 	overflow:hidden;
 	width:35px;
 	height:35px;
@@ -195,6 +207,7 @@ li.mask
 
 #button:hover li.mask
 {
+	opacity:1;
 	width:35px;
 	height:35px;
 	transform : translate(-65px,-50px);
@@ -205,6 +218,7 @@ li.mask
 
 li.history
 {
+	opacity:0;
 	overflow:hidden;
 	width:35px;
 	height:35px;
@@ -216,6 +230,7 @@ li.history
 
 #button:hover li.history
 {
+	opacity:1;
 	width:35px;
 	height:35px;
 	transform : translate(-85px,-10px);
@@ -225,6 +240,7 @@ li.history
 
 li.message
 {
+	opacity:0;
 	overflow:hidden;
 	border-radius:50%;
 	width:35px;
@@ -237,6 +253,7 @@ li.message
 
 #button:hover li.message
 {
+	opacity:1;
 	overflow:visible;
 	width:35px;
 	height:35px;
@@ -247,6 +264,7 @@ li.message
 
 li.setting
 {
+	opacity:0;
 	overflow:hidden;
 	width:35px;
 	height:35px;
@@ -258,6 +276,7 @@ li.setting
 
 #button:hover li.setting
 {
+	opacity:1;
 	width:35px;
 	height:35px;
 	transform : translate(-50px,65px);
@@ -268,6 +287,7 @@ li.setting
 
 li.sign
 {
+	opacity:0;
 	overflow:hidden;
 	width:35px;
 	height:35px;
@@ -279,6 +299,7 @@ li.sign
 
 #button:hover li.sign
 {
+	opacity:1;
 	width:35px;
 	height:35px;
 	transform : translate(-10px,80px);
